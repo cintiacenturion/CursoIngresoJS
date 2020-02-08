@@ -5,18 +5,14 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
-    var sueldo;
-var resultado;
-
-sueldo = document.getElementById("sueldo").value;
-
-sueldo = parseInt(sueldo);
-
-resultado = sueldo * 10 / 100 + sueldo;
-
-prompt (sueldo);
-
-document.
+    var importe;
+    var importeMasIva;
+   
+    importe="33";
+    importe=parseInt(importe);
+    impuesto=importe*21/100
+    importeMasIva =importe+ impuesto;
+    console.log("importe final: " + importeMasIva);
 
     
 }
