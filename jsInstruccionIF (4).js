@@ -4,12 +4,29 @@ function mostrar()
 
 var edad;
 
+edad = document.getElementById("edad");
 
-edad=document.getElementById("edad").value;
 
-if (edad >=13 && edad <=17)
+if (edad <18 && edad > 12)
 {
-alert("Usted es adolesente");
+     alert ("adolescente");
+}
+else
+{
+    alert("NO Adolescesente");
 }
 
+
+
 }//FIN DE LA FUNCIÓN
+
+// otra forma de hacer//
+if (edad> 17) || edad<13)
+{
+alert("No adolecsente");
+}
+
+
+
+
+

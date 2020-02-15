@@ -2,19 +2,37 @@ function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
 	
+	
+	var notaRandom = Math.floor(Math.random()* 10) + 1;
+	console.log(notaRandom);
 
-var random;
-var max;
-var min;
-var max = 8;
-var min = 4;
-random = Math.floor(Math.random()*(max - min)) + min;
+	if (notaRandom <4)
+{
+	alert("fuiste"):
+}
+else
+{
+	if(notaRandom>8);
+	{
+		alert("genio");
+	}
+  else
+   {
+	   alert("aprobo");
+   }
+
+}
+  
+// swicht(notaRandom)
+
+
+  
 
 
 
 
-if (random){
-	alert("Aprobo "+ random);
+
+	
 }
 
 
