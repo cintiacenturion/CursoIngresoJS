@@ -14,7 +14,7 @@ max=11;
 
 
 
- alert(numeroRandom);
+ console.log(numeroRandom);
 	
 
 
