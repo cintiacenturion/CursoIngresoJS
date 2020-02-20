@@ -1,51 +1,33 @@
 function mostrar()
 {
 //tomo la edad  
-var mesDelAño = document.getElementById('mes').value;
+var mesDelAño = document.getElementById("mes").value;
 
-alert (mesDelAño);
 
-switch(mesDelAño){
+switch(mesDelAño)
+{
    
-    case "Julio":
-    alert ("Abrigate que hace frio");
-    break;
-   
-    case "Agosto":
-    alert ("Ya pasamos el frio ahora, calor");
-    break;
-    
+    case"Enero":
+    case "Febrero":
     case "Marzo":
-    alert ("falta para el invierno");
+    case "Abril":
+    case "Mayo":
+    case "Junio":
+    alert("Falta para el invierno");
+    break;
+    
+    case"Julio":
+    case"Agosto":
+    alert("Abrigate que hace frio!!");
     break;
 
-    case "Abril":
-    alert ("falta para el invierno");
-break;
-    
-case "Mayo":
-alert("Falta para el invierno");
-break;
-
-case "Junio":
-alert("falta para el invierno");
-break;
-
-default:
-alert ("ya pasamos el frio,ahora calor");
-break;
+    case"Septiembre":
+    case"Octubre":
+    case "Noviembre":
+    case "Diciembre":
+    alert("Ya pasamos el invierno, ahora calor!!");
+    break;
 
 }
 
-
-}//FIN DE LA FUNCIÓN
-
-//
-case"Enero":
-case "febrero":
-case "m"
-case "Abril"
-ej: 
-alert("falta para el invierno");
-break;
-//
+}
