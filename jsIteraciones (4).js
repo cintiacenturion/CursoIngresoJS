@@ -9,7 +9,7 @@ function mostrar()
 	{
     
 	numero=prompt("Ingrese un numero valido"); 
-    numero = parseint(numero);
+    numero = parseInt(numero);
     console.log(numero);
 	console.log(isNan(numero));
 
