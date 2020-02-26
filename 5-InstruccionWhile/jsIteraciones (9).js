@@ -9,11 +9,9 @@ function mostrar()
 	var min;
 	var primeraVez = true;
 
-	while(respuesta !="no")
+	while(respuesta)
 	{
 		var numero = prompt("Desea continuar");
-		
-	   
 		numero = parseInt(numero);
 	
 		while (isNaN(numero))
@@ -22,21 +20,19 @@ function mostrar()
 			numero = prompt("error: Ingrese un numero valido");
 		
 			numero = parseInt(numero);
-		
-		
 		}
 		if (primeraVez)
 		{
-			primeraVez = false;
+			primeraVez=false;
 			max = numero;
 			min = numero;
 		}
 		 else
 		 {
 			 if (numero > max)
-			 {
-			  mix =numero;
-			 }
+			  {
+			  max =numero;
+			  }
 			 
 			 if (numero< min)
 			 {
@@ -46,11 +42,12 @@ function mostrar()
 		 respuesta = confirm("desea continuar?");
 		
 		}
-	}
+	
        
 	
+     document.getElementById("maximo").value=max;
+     document.getElementById("minimo").value=min;
 
 
 
-
-//FIN DE LA FUNCIÓN
+	}//FIN DE LA FUNCIÓN

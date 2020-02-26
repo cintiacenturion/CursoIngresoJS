@@ -6,11 +6,12 @@ function mostrar()
     
 	
 
-	while (numero <0 || numero > 9|| isNaN (numero))
+	while (numero <0 || numero> 9|| isNaN (numero))
 	{
     
 	numero=prompt("Ingrese un numero valido"); 
-    numero = parseInt(numero);
+	numero = parseInt(numero);
+	document.getElementById("Numero").value= numero;
     console.log(numero);
 	console.log(isNaN(numero));
 

@@ -14,27 +14,33 @@ function CalcularPrecio ()
 var precioLampara;
 var cantidad;
 var marca;
+var precioDescuento;
+var descuento;
 
 precioLampara= 35;
 
-cantidad = document.getElementById("cantidad".value;
-marca = documente.getElementById("marca").value;
+cantidad = document.getElementById("Cantidad").value;
+marca = document.getElementById("Marca").value;
 
-if (cantidad >=6);{
-    descuento = 0.5;
 
-}else if (cantidad ==5 && marca == "Argentina Luz"){
-    descuentro =0.4;
-}else if (cantidad == 5){
-    descuento =0.3
-}
-else if (cantidad == 4){
 
-}else if (true){
 
-}else {
+if (cantidad>5)
+  {
+    descuento = cantidad * 35 * 0.5; 
+    document.getElementById("precioDescuento").value=descuento;
+  }
+    else if(cantidad ==5 && marca == "ArgentinaLuz")
+     {
+      descuento = cantidad * 35 *0.4;
+      document.getElementById("precioDescuento").value=descuento;
+     }
+      else
+         {
+         descuento = cantidad * 35 *0.3;
+         document.getElementById("precioDescuento").value = descuento;
+     
+ }   
+ 
 
-    
-
-}
 }

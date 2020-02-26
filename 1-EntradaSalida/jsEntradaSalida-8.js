@@ -11,6 +11,7 @@ function SacarResto()
     var resto;
     var division;
     
+    
 
     numeroDividendo = document.getElementById("numeroDividendo"). value;
     numeroDividendo = parseInt(numeroDividendo);
@@ -18,12 +19,13 @@ function SacarResto()
     numeroDivisor = parseInt(numeroDivisor);
     
     
-    division = numeroDividendo/ numeroDivisor
-    resto = numeroDividendo - division * numeroDivisor; 
+    division = numeroDividendo / numeroDivisor;
+     
+    resto = numeroDividendo - ( numeroDivisor * cociente); 
+   
+    
 
-
-
-    alert("El resto es " + resto);
+    console.log("El resto es " + resto);
 
 
 
