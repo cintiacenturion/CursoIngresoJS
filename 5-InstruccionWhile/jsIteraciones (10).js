@@ -89,4 +89,58 @@ function mostrar()
 	document.write("Cantidad de positivos " + contadorPositivos + "<br>");
 	document.write("Cantidad de Negativos " + contadorNegativo + "<br>");
 	document.write("Cantidad de ceros " + contadorCero + "<br>");
+	document.write("Cantidad de numeros pares " + contadorPositivos + "<br>" );
+
+	}
+
+	//
+	var contador=0;
+	var respuesta;
+	var acumuladorSuma=0
+	var acumuladorResta=0
+	var cantidadPositivos=0;
+	var cantidadNegativos=0;
+	var cantidadDeCeros=0;
+	var cantidadNegativos=0;
+	var contadorPares =0;
+
+
+	do {
+		do{
+			numero= prompt("Ingrese un numero");
+			numero=parseInt(numero);
+		   
+			
+		}while(isNaN(numero));
+		 
+		if(numero<0){
+			//punto1//
+			acumuladorResta += numero;
+
+		} else if (numero>0){
+			//punto2
+			acumuladorSuma = acumuladorSuma + numero;
+			//punto3
+			cantidadPositivos ++;
+		}else //aca es el 0
+		{ 
+         cantidadCeros=
+		}
+
+		 //promedioNegativos 8
+		 promedioDeNegativos =acumuladorResta / cantidadNegativos;
+		
+		 //promedioPositivo 7
+		 if (cantidadNegativos !=0){
+			 promedioDeNegativos = acumuladorSuma / cantidadPositivos;
+			 }
+			 
+			 //promedioNegativos 8
+         promedioDeNegativos = acumuladorResta/cantidadNegativos;
+		 }
+
+
+		}
+
+		respuesta = confirm("Desea continuar?");
 	}
