@@ -1,6 +1,6 @@
 function mostrar()
 {
-  alert('iteración while');
+	alert('iteración while');
 
 
 var contador= 0;
@@ -13,7 +13,6 @@ console.log(contador);
 
 }
 
- 
 
 
 }//FIN DE LA FUNCIÓN
