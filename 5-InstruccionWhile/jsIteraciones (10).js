@@ -1,11 +1,11 @@
 function mostrar()
 {
 
-	var contador=0;
-	//declarar contadores y variables 
 	
+	//declarar contadores y variables 
+	var contador=0;
 	var respuesta ="si";
-	var suma=true;
+	var suma=true;//ver
 	var sumaDePositivos=0;
 	var sumaDeNegativos=0;
 	var contadorPositivos= 0;
@@ -15,132 +15,59 @@ function mostrar()
 	var promedioDePositivos;
 	var promedioDeNegativos;
 	var diferenciasPositivosYNegativos;
+	
     
 	while(respuesta)
 	{
-		var numero = prompt("Desea continuar");
+		var numero = prompt("Desea continuar?");
 		numero = parseInt(numero);
 	
 		while (isNaN(numero))
-		
-		{
+		 {
 			numero = prompt("error: Ingrese un numero valido");
 		
 			numero = parseInt(numero);
-		}
-
-	
-
-
-	  if (numero>0)
-	  { 
-      //punto 2 
-
-	  sumaDePositivos += numero;
+		 }
+		 //punto 1
+           if (numero<0){ 
+			 sumaDeNegativos += numero;
+			 contadorNegativo ++;
+			  
+			}else if (numero > 0){
+               //punto2//
+			   sumaDePositivos = sumaDePositivos + numero;
+			   contadorPositivos ++; // punto 3
+			    }
+			     else{ // *cero*//
+	             contadorCero ++;
+                 }
+                 //punto 6//
+	             if (numero % 2==0){
 	  
+		         contadorPares ++;
+	             }
+	              respuesta = confirm("Desea continuar?"); 
+				 }//FIN WHILE
+ //punto 7//
+      promedioDePositivos = sumaDePositivos / contadorPositivos;
 
-	  //punto 3
-	  
-	  contadorPositivos ++;
-	  
-	  
-    }
-
-      else if (numero < 0)
-     {
-	  //punto1//
-	  sumaDeNegativos += numero;
-
-	  contadorNegativo ++;
-
-	 }
-	 
-
-
-	  else // *cero*//
-	  {
-      contadorCero ++;
-
-	  }
-        //punto 6//
-	  if (numero % 2==0)
-	  {
-		  contadorPositivos ++ 
-	  }
-	  
- respuesta = confirm("Desea continuar?");
-//FIN DE LA FUNCIÓN
-
-//punto 7//
-      promedioDePositivos =sumaDePositivos / contadorPositivos;
-
-//punto 8//
+ //punto 8//
 
       promedioDeNegativos = sumaDeNegativos /contadorNegativo;
 
 //punto9//
      diferenciasPositivosYnegativos = sumaDePositivos - sumaDeNegativos;
+	
+    
+    document.write("Suma de Negativos: " + sumaDeNegativos + "<br>");//1
+	document.write("Suma de los Positivos: " + sumaDePositivos + "<br>"); //2
+	document.write("Cantidad de positivos: " + contadorPositivos + "<br>"); //3
+	document.write("Cantidad de Negativos: " + contadorNegativo + "<br>");//4
+	document.write("Cantidad de ceros: " + contadorCero + "<br>");//5
+	document.write("Cantidad de numeros pares: " + contadorPares + "<br>" );//6
+	document.write("Promedio de positivos: " + promedioDePositivos + "<br>" );//7
+	document.write("Promedio de negativos: " + promedioDeNegativos +"<br>");//8
+	document.write("Diferencia de Positivos y Negativos: " + diferenciasPositivosYnegativos + "<br>" );//9
 	}
-    document.write("Promedio de positivos: " + promedioDePositivos + "<br>" );
-    document.write("Promedio de negativos: " + promedioDePositivos +"<br>");
-    document.write("Diferencia de Positivos y Negativos " + diferenciasPositivosYnegativos + "<br>" );
-    document.write("Suma de Negativos " + sumaDeNegativos + "<br>");
-	document.write("Suma de los Positivos " + sumaDePositivos + "<br>");
-	document.write("Cantidad de positivos " + contadorPositivos + "<br>");
-	document.write("Cantidad de Negativos " + contadorNegativo + "<br>");
-	document.write("Cantidad de ceros " + contadorCero + "<br>");
-	document.write("Cantidad de numeros pares " + contadorPositivos + "<br>" );
 
-	}
-
-	//
-	var contador=0;
-	var respuesta;
-	var acumuladorSuma=0
-	var acumuladorResta=0
-	var cantidadPositivos=0;
-	var cantidadNegativos=0;
-	var cantidadDeCeros=0;
-	var cantidadNegativos=0;
-	var contadorPares =0;
-
-
-	do {
-		do{
-			numero= prompt("Ingrese un numero");
-			numero=parseInt(numero);
-		   
-			
-		}while(isNaN(numero));
-		 
-		if(numero<0){
-			//punto1//
-			acumuladorResta += numero;
-
-		} else if (numero>0){
-			//punto2
-			acumuladorSuma = acumuladorSuma + numero;
-			//punto3
-			cantidadPositivos ++;
-		}else //aca es el 0
-		{ 
-         cantidadCeros=
-		}
-
-		 //promedioNegativos 8
-		 promedioDeNegativos =acumuladorResta / cantidadNegativos;
-		
-		 //promedioPositivo 7
-		 if (cantidadNegativos !=0){
-			 promedioDeNegativos = acumuladorSuma / cantidadPositivos;
-			 }
-			 
-			 //promedioNegativos 8
-         promedioDeNegativos = acumuladorResta/cantidadNegativos;
-		 }
-
-
-		}
-
-		respuesta = confirm("Desea continuar?");
-	}
+	
