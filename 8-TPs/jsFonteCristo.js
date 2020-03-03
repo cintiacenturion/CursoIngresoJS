@@ -9,59 +9,107 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 */
 
 var numero;
-function ComenzarIngreso () 
-{    
+var numerosPares;
+
+var contadorDivisible;
+var numerosPrimos;
+
+ 
+function NumerosPares () 
+    {    
+    var contador=0;
     numero=document.getElementById("numero").value;
     numero=parseInt(numero);
     while(isNaN(numero) || numero < 1)
     {   
-        numero =prompt("Ingrese Numero");
+        numero =prompt("Ingrese Numero positivo");
         numero=parseInt (numero);
-
-    }
-
-}
+        } 
  
-function numerosPares () 
-{
-    var contador=0;
-    ComenzarIngreso();
-
-   
-    while (contador < numero) //A
-    {
-        contador ++
-
-        if (contador % 2 ==0)
-        {
-            console.log(contador);
-        }
+    while (contador<numero){
+        contador ++;
+        if (contador % 2 ==0){
+        numerosPares =alert("su numero es " + contador);
+        }   
     }
-    function numerosImpares () 
-    {   
+    
+    
+
+    }
+function NumerosImpares ()
+    {
         var contador=0;
         var contadorImpares=0;
-        contador ++ 
-        if (contador % 2 !=0)
-        {
-            console.log(contador);
-        }
-    }
-
-    function numerosdivisibles ()
+       numero= document.getElementById("numero").value;
+       numero=parseInt(numero);
+    while (isNaN(numero) || numero <1)
     {
-        var contador=1;
-        ComenzarIngreso();
-
-        while(contador <= 100)
-        {
-            contador ++
-            if (numero % contador ==0)
-            {
-                contadorDivisible ++;
-                console.log(contador);//para saber que n son divisibles resto 0 ej 50.
-            }
-        }
+        numero = prompt("Ingrese Numero positivo")
+        numero=parseInt(numero);
     }
+   while (contador <numero){
+       contador ++;
+       if (contador %2 !=0){
+           NumerosImpares=alert("Los numeros Impares son "+ contador);
+       }
 
+  
+    }
 }
+
+function NumerosDivisibles ()
+{
+    var contador=1;
+    
+   numero= document.getElementById("numero").value;
+   numero=parseInt(numero);
+while (isNaN(numero) || numero <1)
+{
+    numero = prompt("Ingrese Numero positivo")
+    numero=parseInt(numero);
+    contadorDivisible=parseInt(numero);
+}
+while (contador <=100){
+    contador ++;
+   if (numero % contador==0){
+       contadorDivisible ++;
+
+       NumerosDivisibles=alert("Los numeros Divisibles son "+ contador);
+   }
+
+   }
+}
+function VerificarPrimo ()
+{
+   numero= document.getElementById("numero").value;
+   numero=parseInt(numero);
+   while (isNaN(numero) || numero <1)
+{
+    numero = prompt("Ingrese Numero positivo")
+    numero=parseInt(numero);
+    
+    
+    }
+    
+    if ( numero % 2 ==0 ){
+        numero=parseInt(numero);
+        numero = alert(numero +" es numero primo");
+    }else{
+        numero = alert(numero + "no Es numero primo");
+    }
+    }
+    
+        
+    
+
+    
+
+
+
+
+
+
+
+
+
+
