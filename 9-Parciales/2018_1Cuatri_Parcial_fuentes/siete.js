@@ -39,7 +39,7 @@ function mostrar()
   
   alert ("Promedio "+ promedio);
   alert ( "LA NOTA MAS BAJA ES:  " + miniNota+ " el alumno es de sexo " + sexo );
-
+  alert(contadorVarones + " Varones con nota mayor igual a 6");
 
 
 }
